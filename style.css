@@ -1,0 +1,139 @@
+
+html{
+  /*Set some global colors here for quick re-coloring of stuff!*/
+  --bg-color: #6b705c ;
+  --darker-color: #cb997e;
+  --lighter-color: #b7b7a4;
+  --accent-color: #cb997e;
+
+  --sidebar-width:100px;
+  background-color: var(--bg-color);
+  background-image: url(); /*add image url for tiled background*/
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+ 
+body {
+  color: #ffe8d6; /*text color*/
+  font-family: 'Lucida Console', monospace, sans-serif;
+  text-align: left;
+  margin-left: 0vw;
+  margin-bottom: 24px;
+  overflow-x: hidden;
+}
+
+header {
+  width: auto;
+  display: flex;
+  margin: 1vw 4vw 1vw 7vw;
+  background-color: transparent;
+}
+
+header img{
+  display: block;
+  max-height: 400px;
+  margin: auto;
+}
+
+
+p {padding: 2px 6px 2px;}
+
+a:link{
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+
+a:visited{
+  color: antiquewhite;
+}
+
+
+nav{
+  width: var(--sidebar-width);
+  position: absolute;
+  padding: 10px;
+  border-radius: 3px;
+  margin-left: 1vw;
+  background-color: var(--lighter-color);
+}
+
+
+.divider{
+  height: 5px;
+  width: 110%;
+  overflow: hidden;
+  margin: 0%;
+  background-color: var(--accent-color);
+}
+
+main{
+  background-color: var(--lighter-color);
+  margin-left: calc( var(--sidebar-width) + 50px);
+  margin-right: calc( var(--sidebar-width) /2);
+  padding: 25px;
+}
+
+
+.container{
+  display: flex;
+}
+
+.picture img {
+  max-width: 250px;
+  flex-shrink: 0;
+  float: left;
+  margin: 5px;
+}
+
+.description {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--lighter-color);
+  border: 2px solid var(--darker-color);
+}
+
+.gallery img {
+  border: 1px solid var(--accent-color); 
+  padding: 5px; 
+  height: 200px;
+}
+
+
+table {
+  table-layout:fixed;
+  border: 5px solid;/*table outline*/
+  border-spacing:2px;
+  margin: auto;
+  width: 40%;
+  min-width: 300px;
+  background-color: var(--lighter-color);
+}
+
+th{
+  text-align: center;
+  border: 1px solid;
+  border-spacing:2px;
+}
+
+td{
+  text-align: left;
+  border: 1px solid;
+  border-spacing:2px;
+  padding: 2px 6px 2px;
+}
+
+footer {
+  font-size: 12px;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  height: 24px;
+}
+a:hover {
+  color: #6b705c;
+}
