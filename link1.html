@@ -24,10 +24,51 @@
 	<main>
 	
 		<h2>My writing</h2>
-		<p>TBA</p>
-
+		
 
 	</main>
+	<section>
+			<article> 
+				<h2>Building Better Bus Networks</h2>
+    				<div class="overlay">
+        				<div class="text"><a href="https://auadvancedreportingspring24.wordpress.com/2024/12/03/building-better-bus-systems/">Read</a>
+						a piece examining WMATA's Better Bus redesign and its predecessors.</div>
+    				</div>
+  			</article>
+			<article> 
+				<h2>AU values grants over community</h2>
+    				<div class="overlay">
+        				<div class="text"><a href="https://file.garden/Zb0gC7qUe1Miz4-M/folio/campus521.pdf">Read (pdf)</a>
+						an opinion piece on the failures of American University administration.</div>
+    				</div>
+  			</article>
+			<article> 
+				<h2>New organization creates space for LGBTQ+ students</h2>
+    				<div class="overlay">
+        				<div class="text"><a href="https://file.garden/Zb0gC7qUe1Miz4-M/folio/zineclub.pdf">Read (pdf)</a>    			a reported news piece on the beginning of a new student collective.
+</div>
+					</div>
+  			</article>
+			<article> 
+				<h2>After the Hearing: does DDOT Know What's Happening with the Circulator?</h2>
+    				<div class="overlay">
+        				<div class="text"><a href="https://auadvancedreportingspring24.wordpress.com/2024/11/04/after-the-hearing-does-ddot-know-whats-happening-with-the-circulator/"> Read</a> a piece on the controversy surrounding the EOS of the DC Circulator buses in December of 2024.</div>
+    				</div>
+  			</article>
+			<article> 
+				<h2>When do we change the stylebook?</h2>
+    				<div class="overlay">
+        				<div class="text"><a href="https://file.garden/Zb0gC7qUe1Miz4-M/folio/final409.pdf">Read (pdf)</a> a piece on how language shapes our perception of partisanship in media.</div>
+    				</div>
+  			</article>
+			<article> 
+				<h2>Students are listening on climate concerns</h2>
+    				<div class="overlay">
+        				<div class="text"><a href="https://www.washingtonpost.com/opinions/2024/02/25/students-are-listening-climate-concerns/">Read</a> my letter to the editor about the intersection of young minds with climate change.</div>
+    				</div>
+  			</article>
+
+		</section>
    
    <footer>
 	html by jackie, 2024. stylesheet is <a href="https://watercss.kognise.dev/">water.css.</a>
@@ -47,6 +88,76 @@
 	body {
 		font-family: Harding !important;
 	}
+/*THIS IS THE PASTED GALLERY CODE FROM YOUR COLLECTIONS PAGE ON THE OTHER WEBSITE. THIS HAS THE OVERLAY PROPERTIES. DO NOT TOUCH THIS. DO NOT. */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+
+section {
+  width: 115%;
+	display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+  
+  article {
+    order: 999999;	
+    min-width: 150px;
+    max-width: 19vw;
+    min-height: 200px;
+	max-height: 10;
+    flex: 1 1 23vw;
+    border: 1px solid #ffffff;
+    padding: 20px 2vw;
+    margin: 0 0 20px 0;
+    position: relative;
+  }
+
+    article img {
+      order: 9999999;
+      height:fit-content;
+      width: fit-content;
+    }
+
+    article a {
+		color: #ffffff;
+	}
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        min-height: 200px;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: #008CBA;
+    }
+    article:hover .overlay {
+        opacity: 1;
+    }
+
+    .text {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+    }
+      @media screen and (max-width: 950px) {
+        img {
+            max-width: 100%;
+        }
+        .overlay:active {
+            opacity: 1;
+            animation-duration: 20s;
+        }
+      }
 </style>
 
 </html>
